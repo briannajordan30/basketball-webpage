@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(
+          111.1deg,
+          rgb(0, 40, 70) -4.8%,
+          rgb(255, 115, 115) 82.7%,
+          rgb(255, 175, 123) 97.2%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(0, 40, 70);
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+      body {
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: rgb(0, 40, 70);
+        color: #ffffff;
+        font-size: 20px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .learnMore {
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        border: 1px solid rgb(0, 40, 70);
+        border-radius: 20px;
+        text-decoration-color: white;
+        background-color: white;
+        padding: 0auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basketball</h1>
+      <h2>Playing basketball is really fun</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/739/original/Ball_Basket_A_21_NWU_MS_11902_71.jpg?1695248310"
+        alt="Basketball"
+      />
+      <p>
+        Basketball is a team sport in which two teams, most commonly of five
+        players each, opposing one another on a rectangular court, compete with
+        the primary objective of shooting a basketball (approximately 9.4 inches
+        (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46
+        cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each
+        end of the court), while preventing the opposing team from shooting
+        through their own hoop. A field goal is worth two points, unless made
+        from behind the three-point line, when it is worth three. After a foul,
+        timed play stops and the player fouled or designated to shoot a
+        technical foul is given one, two or three one-point free throws. The
+        team with the most points at the end of the game wins, but if regulation
+        play expires with the score tied, an additional period of play
+        (overtime) is mandated.
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Basketball"
+        target="_blank"
+        class="learnMore"
+        >Learn more on Wikipedia</a
+      >
+      <button>🏀Learn to play basketball</button>
+      <p class="footer">This page was built by BriAnna Shavers</p>
+    </div>
+    <script>
+      function learn() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert("Thank you, " + name + "! We'll be in touch for lessons 👍");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", learn);
+    </script>
+  </body>
+</html>
